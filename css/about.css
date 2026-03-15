@@ -1,0 +1,224 @@
+.fv-about {
+    margin-bottom: 5rem;
+  }
+  @media (max-width: 768px) {
+    .fv-about {
+      margin-bottom: 7.3rem;
+    }
+  }
+
+  
+  /* =========================
+     経営理念
+  ========================= */
+  .philosophy__inner {
+    max-width: 953px;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .philosophy__inner {
+      padding: 0 2rem;
+    }
+  }
+  .sub__title {
+    font-size: clamp(2rem, 2.3vw, 3.2rem);
+  }
+   .philosophy__inner .sub__title {
+    margin-bottom: 5.5rem;
+   }
+   @media (max-width: 768px) {
+    .philosophy__inner .sub__title {
+      margin-bottom: 3.5rem;
+    }
+   }
+  .philosophy__image {
+    width: 96.9%;
+  }
+  @media (max-width: 768px) {
+    .philosophy__image {
+      width: 100%;
+    }
+  }
+  .philosophy__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* =========================
+     会社概要
+  ========================= */
+  .company__inner {
+    max-width: 953px;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .company__inner {
+      padding: 0 2rem;
+    }
+  }
+  .company__inner .sub__title {
+    margin-bottom: 5.5rem;
+  }
+  @media (max-width: 768px) {
+    .company__inner .sub__title {
+      margin-bottom: 3.5rem;
+    }
+  }
+  .company__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5rem;
+  }
+  @media (max-width: 768px) {
+    .company__body {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 3.6rem;
+    }
+  }
+  .company__item {
+    width: 48.8%;
+  }
+  @media (max-width: 768px) {
+    .company__item {
+      width: 100%;
+    }
+  }
+  .company__text {
+    line-height: 1.8;
+  }
+  @media (max-width: 768px) {
+    .company__text {
+      margin-bottom: 2rem;
+    }
+  }
+  .company__item-ceo {
+    width: 34.7%;
+  }
+  @media (max-width: 768px) {
+    .company__item-ceo {
+      width: 100%;
+    }
+  }
+  .company__image {
+    width: 100%;
+    margin-bottom: 1.2rem;
+  }
+  .company__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .company__name {
+  }
+  .company__name-title {
+    margin-bottom: 1rem;
+    font-size: clamp(1.4rem, 1.12vw, 1.6rem);
+  }
+  @media (max-width: 768px) {
+    .company__name-title {
+      margin-bottom: 1rem;
+    }
+  }
+  .company__name-text {
+    font-size: clamp(2rem, 2.3vw, 3.2rem);
+  }
+  
+  .company__desc {
+    margin-bottom: 4.4rem;
+  }
+  @media (max-width: 768px) {
+    .company__desc {
+      margin-bottom: 3.2rem;
+    }
+  }
+  .company__desc-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #B1C6DC;
+    padding: 3rem 0;
+    line-height: 1;
+  }
+  .company__desc-title {
+    width: 25.4%;
+  }
+  .company__desc-text {
+    width: 74.6%;
+  }
+  /* =========================
+     安全への取り組み
+  ========================= */
+  .safety {
+    margin-bottom: 19.3rem;
+  }
+  @media (max-width: 768px) {
+    .safety {
+      margin-bottom: 10rem;
+    }
+  }
+  .safety__inner {
+    max-width: 953px;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .safety__inner {
+      padding: 0 2rem;
+    }
+  }
+  .safety__inner .sub__title {
+    margin-bottom: 7.6rem;
+  }
+  @media (max-width: 768px) {
+    .safety__inner .sub__title {
+      margin-bottom: 3.5rem;
+    }
+  }
+  .safety__content {
+    width: 100%;
+  }
+  .safety__item {
+    margin-bottom: 2.5rem;
+  }
+  .safety__item:last-child {
+    margin-bottom: 0;
+  }
+  .heading__title {
+    font-size: clamp(1.8rem, 1.67vw, 2.4rem);
+    line-height: 1.8;
+  }
+  .safety__item-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (max-width: 768px) {
+    .safety__item-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .safety__item-text {
+    width: 67.3%;
+    line-height: 1.8;
+  }
+  @media (max-width: 768px) {
+    .safety__item-text {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+  .safety__image {
+    width: 28%;
+  }
+  @media (max-width: 768px) {
+    .safety__image {
+      width: 100%;
+    }
+  }
+  .safety__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
