@@ -62,15 +62,16 @@
                 </div>
             </div>
         </div>
-        <section class="description description__c">
+        <section class="description description__c description__thanks">
           <div class="description__c-inner">
             <div class="description__left">
-                <h2 class="main__title">お問い合わせ</h2>
+                <h2 class="main__title">送信完了</h2>
                 <p class="main__text">
-                    青牡丹工務店のサービスにご興味を持って頂き、誠にありがとうございます。下記のフォームよりお問い合わせください。
+                    お問い合わせありがとうございました。<br>
+                    後日担当者より返信させていただきますので、お待ち下さいませ。
                 </p>
                 <div class="desc__body">
-                  <div class="contact__desc bg-blue fc-white">
+                  <div class="contact__desc fc-blue">
                     <span class="contact__desc-num">
                       01
                     </span>
@@ -79,7 +80,7 @@
                     </p>
                   </div>
                   <div class="contact__desc-line"></div>
-                  <div class="contact__desc fc-blue">
+                  <div class="contact__desc bg-blue fc-white">
                     <span class="contact__desc-num">
                       02
                     </span>
@@ -93,20 +94,24 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/img/contact_01 1.png" alt="お問い合わせのフロントビジュアル画像">
               </div>
               <div class="contact__tel">
-                  <p class="contact__tel-text fw-700">
+                  <p class="contact__tel-text">
                       お電話も受け付けています。
                   </p>
                   <p class="contact__tel-num heading-en">
                       0000-000-0000
                   </p>
-                  <p class="contact__tel-time fw-700">
+                  <p class="contact__tel-time">
                       営業時間10:00-20:00
                   </p>
               </div>
             </div>
           </div>
         </section>
-        <?php echo do_shortcode('[contact-form-7 id="1296794" title="お問い合わせフォーム"]'); ?>
+        <div class="return-top-wrapper">
+          <a href="<?php echo home_url(); ?>" class="submit-link readmore bg-blue return-top submit-btn fc-white submit-btn fc-white">
+            トップページに戻る
+          </a>
+        </div>
         <section class="contact bg-gray">
           <div class="contact__inner">
             <div class="contact__content">
@@ -148,12 +153,5 @@
         </section>
     </main>
   </div>
-  <script>
-document.addEventListener('wpcf7mailsent', function (event) {
-  console.log('wpcf7mailsent fired');
-  console.log(event.detail);
-  window.location.href = '<?php echo esc_url( home_url('/thanks/') ); ?>';
-}, false);
-</script>
 
 <?php get_footer(); ?>

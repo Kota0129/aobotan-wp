@@ -100,6 +100,14 @@ function start_enqueue_scripts() {
       array('start-common')
     );
   }
+  
+  if (is_page(array('contact', 'thanks'))) {
+    start_enqueue_theme_style(
+      'start-contact',
+      '/css/contact.css',
+      array('start-common')
+    );
+  }
 
 
   /* ---------- slick 使用時のみ有効化 ---------- */
@@ -168,19 +176,19 @@ add_filter('wpcf7_autop_or_not', '__return_false');
  * 管理画面から「投稿」を非表示にする
  * ※ 投稿機能を使わない案件のみ有効化
  * ======================================= */
-/*
+
 function start_remove_menus() {
   remove_menu_page('edit.php');
 }
 add_action('admin_menu', 'start_remove_menus');
-*/
+
 
 
 /* =========================================
  * カスタム投稿・タクソノミーは案件ごとに追加
  * 必要時のみ下に追記
  * ======================================= */
-/*
+
 function start_create_post_type() {
 
   register_post_type(
@@ -212,4 +220,3 @@ function start_create_post_type() {
   );
 }
 add_action('init', 'start_create_post_type');
-*/

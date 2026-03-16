@@ -55,17 +55,26 @@ $('.sidebar__link').on('click', function (e) {
   // モーダル開閉
   // ========================
   $('.js-open').on('click', function () {
-    const $item = $(this).closest('.news__item');
-    $item.find('.js-modal, .js-mask').removeClass('hidden').addClass('is-active');
+    const targetId = $(this).data('target');
+    const $modal = $('#' + targetId);
+  
+    if (!$modal.length) return;
+  
+    $modal.removeClass('hidden').addClass('is-active');
     $('body').addClass('is-fixed');
   });
-
-  $('.js-close, .js-mask').on('click', function () {
-    const $item = $(this).closest('.news__item');
-    $item.find('.js-modal, .js-mask').removeClass('is-active');
+  
+  $('.js-close').on('click', function () {
+    const $modal = $(this).closest('.js-modal');
+  
+    if (!$modal.length) return;
+  
+    $modal.removeClass('is-active');
+  
     setTimeout(function () {
-      $item.find('.js-modal, .js-mask').addClass('hidden');
+      $modal.addClass('hidden');
     }, 400);
+  
     $('body').removeClass('is-fixed');
   });
 
@@ -154,12 +163,12 @@ $('.sidebar__link').on('click', function (e) {
   updateSubmitButtonStateJQ();
 
   // フォーム送信時の thanks.html 遷移処理
-  $form.on('submit', function (e) {
-    e.preventDefault();
-    if (!$submitBtn.prop('disabled')) {
-      window.location.href = 'thanks.html';
-    }
-  });
+  // $form.on('submit', function (e) {
+  //   e.preventDefault();
+  //   if (!$submitBtn.prop('disabled')) {
+  //     window.location.href = 'thanks.html';
+  //   }
+  // });
 
   // ========================
     // ローディング
