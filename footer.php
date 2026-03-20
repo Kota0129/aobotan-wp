@@ -5,7 +5,7 @@
         <div class="footer__content">
           <div class="footer__heading">
             <div class="footer__logo">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/logo-pc (1).png" alt="青牡丹工勥店のロゴ画像">
+              <img src="<?php echo esc_url( get_theme_file_uri( '/img/logo-pc (1).png' ) ); ?>" alt="青牡丹工勥店のロゴ画像">
             </div>
             <address class="footer__address">
               <p class="footer__address-text pc-only">〒000-0000　大阪府大阪市中央区北区南町5-6-7</p>

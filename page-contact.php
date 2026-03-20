@@ -5,7 +5,7 @@
       <div class="sidebar__inner">
         <div class="sidebar__logo">
           <a class="sidebar__logo-link" href="<?php echo home_url(); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-pc (1).png" alt="青牡丹工勥店のロゴ画像">
+            <img src="<?php echo esc_url( get_theme_file_uri( '/img/logo-pc (1).png' ) ); ?>" alt="青牡丹工勥店のロゴ画像">
           </a>
         </div>
         <nav class="sidebar__nav">
@@ -43,7 +43,7 @@
             </li>
             <li class="sidebar__item">
               <a class="sidebar__link no-before-after sidebar__mail" href="<?php echo home_url('/contact/'); ?>">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/mail-icon.png" alt="メールアイコン">
+                  <img src="<?php echo esc_url( get_theme_file_uri( '/img/mail-icon.png' ) ); ?>" alt="メールアイコン">
                   <span>
                       お問い合わせ
                   </span>
@@ -58,7 +58,7 @@
             <div class="fv__blue fv__blue-about"></div>
             <div class="fv__inner">
                 <div class="fv__image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/Firefly 木製の家の模型が机の上にある 60602 1.png" alt="事業内容のフロントビジュアル画像">
+                    <img src="<?php echo esc_url( get_theme_file_uri( '/img/Firefly 木製の家の模型が机の上にある 60602 1.png' ) ); ?>" alt="事業内容のフロントビジュアル画像">
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@
              </div>
             <div class="description__right">
               <div class="description__r-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/contact_01 1.png" alt="お問い合わせのフロントビジュアル画像">
+                <img src="<?php echo esc_url( get_theme_file_uri( '/img/contact_01 1.png' ) ); ?>" alt="お問い合わせのフロントビジュアル画像">
               </div>
               <div class="contact__tel">
                   <p class="contact__tel-text fw-700">
@@ -107,45 +107,7 @@
           </div>
         </section>
         <?php echo do_shortcode('[contact-form-7 id="1296794" title="お問い合わせフォーム"]'); ?>
-        <section class="contact bg-gray">
-          <div class="contact__inner">
-            <div class="contact__content">
-              <div class="sec__title">
-                <p class="sec__sub-title fw-700">お問い合わせ</p>
-                <h2 class="sec__main-title heading-en">CONTACT</h2>
-              </div>
-              <div class="contact__body">
-                <ul class="contact__list">
-                  <li class="contact__item">
-                    <p class="contact__big heading-en ">
-                      Tel
-                    </p>
-                    <p class="contact__small">
-                      お電話
-                    </p>
-                  </li>
-                  <li class="contact__item">
-                    <p class="contact__big heading-en ">
-                      0000-000-0000
-                    </p>
-                    <p class="contact__small">
-                      営業時間10:00-20:00
-                    </p>
-                  </li>
-                </ul>
-                <a class="contact__mail-link readmore bg-white" href="#">
-                  <div class="contact__mail-icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/mail-icon.png" alt="メールアイコン">
-                  </div>
-                  メールフォームはこちら
-                </a>
-              </div>
-            </div>
-            <div class="contact__image">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/financing_01.png" alt="青牡丹工勥店のお問い合わせ画像">
-            </div>
-          </div>
-        </section>
+        <?php get_template_part('template-parts/section-contact'); ?>
     </main>
   </div>
   <script>

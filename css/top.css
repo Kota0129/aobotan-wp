@@ -18,7 +18,7 @@
       padding: 1.6rem 2rem 5.8rem;
     }
   }
-  .slick-list{
+  .inner .slick-list{
     overflow: visible;
   }
   .slick-item{
@@ -263,7 +263,7 @@
   }
   .news__link {
     display: block;
-    padding: 3.2rem 0 2.5rem;
+    padding: 3.2rem 0 2rem;
     position: relative;
     /* buttonリセット */
     background: none;

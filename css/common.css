@@ -85,6 +85,7 @@ address {
   }
 }
 
+
 /* =========================
    フォントウェイト
 ========================= */
@@ -577,6 +578,7 @@ address {
     border-radius: 10px;
     text-align: center;
     padding: 1.65rem 0;
+    gap: 0.8rem;
     position: relative;
     transition: all 0.3s;
     font-weight: 700;
@@ -586,7 +588,7 @@ address {
       width: 240px;
     }
   }
-  .readmore::before {
+  .readmore::after {
     content: "";
     display: block;
     width: 10px;
@@ -595,7 +597,7 @@ address {
     background-color: #000000;
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: clamp(10px, 1.4vw, 20px);
     transform: translateY(-50%);
   }
   .readmore:hover {
@@ -673,8 +675,8 @@ body.page-top .fv__image.is-animate {
 
 .fv__content {
   position: absolute;
-  right: 11.3rem;
-  bottom: 6.3rem;
+  right: 11.6rem;
+  bottom: 6rem;
 }
 
 @media (max-width: 768px) {
@@ -692,7 +694,7 @@ body.page-top .fv__image.is-animate {
     border-radius: 10px;
     font-size: clamp(2.4rem, 4.5vw, 6.4rem);
     padding: 0 1.2rem;
-    margin-bottom: 2.8rem;
+    margin-bottom: 1.8rem;
 }
 
 .fv__subtitle {
@@ -816,8 +818,8 @@ body.page-top .fv__image.is-animate {
   .contact__item {
     width: fit-content;
     position: relative;
-    padding: 0.5rem 3.3rem 0.5rem 0;
-    margin-right: 3.4rem;
+    padding: 0.5rem clamp(2rem, 2.3vw, 3.3rem) 0.5rem 0;
+    margin-right: clamp(2rem, 2.4vw, 3.4rem);
   }
   @media (max-width: 768px) {
     .contact__item {
@@ -858,7 +860,7 @@ body.page-top .fv__image.is-animate {
     }
   }
   .contact__big {
-    font-size: 3.2rem;
+    font-size: clamp(1.6rem, 2.23vw, 3.2rem);
     line-height: 1;
     margin-bottom: 0.6rem;
   }
@@ -870,20 +872,19 @@ body.page-top .fv__image.is-animate {
   .contact__small {
     font-size: 1.2rem;
   }
-  /* @media (max-width: 768px) {
-    .contact__small {
-      font-size: 1.2rem;
-    }
-  } */
+  .contact__big,
+  .contact__small {
+    white-space: nowrap;
+  }
   .contact__mail-link.readmore {
-    width: 284px;
+    width: clamp(200px, 20vw, 284px);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.8rem;
     border: none;
-    font-size: clamp(1.1rem, 1.12vw, 1.6rem);
+    font-size: clamp(1rem, 1.12vw, 1.6rem);
   }
   @media (max-width: 768px) {
     .contact__mail-link.readmore {
@@ -1197,4 +1198,12 @@ body.page-top .fv__image.is-animate {
       text-align: center;
       margin-right: 0;
     }
+  }
+
+  .p-404__inner {
+    
+    text-align: center;
+  }
+  .p-404__inner .readmore {
+    margin: 0 auto;
   }

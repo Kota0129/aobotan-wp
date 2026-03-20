@@ -23,7 +23,7 @@
   <!-- <div id="loading">
     <div class="kvArea" id="loading_box">
       <div class="img_box">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/logo-pc (1).png" alt="青牡丹工務店のロゴ画像">
+        <img src="<?php echo esc_url( get_theme_file_uri( '/img/logo-pc (1).png' ) ); ?>" alt="青牡丹工務店のロゴ画像">
       </div>
     </div>
   </div> -->
@@ -31,7 +31,7 @@
     <div class="header__inner">
       <h1 class="header__logo">
         <a class="header__logo-link" href="index.html">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/logo-pc (1).png" alt="青牡丹工勥店のロゴ画像">
+          <img src="<?php echo esc_url( get_theme_file_uri( '/img/logo-pc (1).png' ) ); ?>" alt="青牡丹工勥店のロゴ画像">
         </a>
       </h1>
       <div class="header__nav-wrapper">
