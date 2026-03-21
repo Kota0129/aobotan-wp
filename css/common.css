@@ -784,6 +784,7 @@ body.page-top .fv__image.is-animate {
   }
   .contact__content {
     width: 68%;
+    min-width: 600px;
   }
   @media (max-width: 768px) {
     .contact__content {
@@ -792,7 +793,7 @@ body.page-top .fv__image.is-animate {
   }
   .contact__body {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
   }
   @media (max-width: 768px) {
@@ -877,7 +878,8 @@ body.page-top .fv__image.is-animate {
     white-space: nowrap;
   }
   .contact__mail-link.readmore {
-    width: clamp(200px, 20vw, 284px);
+    width: clamp(250px, 20vw, 284px);
+    min-width: 250px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -885,6 +887,7 @@ body.page-top .fv__image.is-animate {
     gap: 0.8rem;
     border: none;
     font-size: clamp(1rem, 1.12vw, 1.6rem);
+    margin-left: clamp(2rem, 4.45vw, 6.4rem);
   }
   @media (max-width: 768px) {
     .contact__mail-link.readmore {

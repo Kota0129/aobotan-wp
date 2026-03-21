@@ -67,7 +67,7 @@
             <div class="description__image">
               <img src="<?php echo esc_url( get_theme_file_uri( '/img/offline-hearing_01 1.png' ) ); ?>" alt="私達についてのフロントビジュアル画像">
             </div>
-            <h2 class="main__title">私達について</h2>
+            <h1 class="main__title">私達について</h1>
             <p class="main__text">
               「丁寧な家造りで、理想を現実に」<br>
               これを実現するために、わたしたちが行っていることを

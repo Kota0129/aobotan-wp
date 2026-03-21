@@ -65,7 +65,7 @@
         <section class="description description__c description__thanks">
           <div class="description__c-inner">
             <div class="description__left">
-                <h2 class="main__title">送信完了</h2>
+                <h1 class="main__title">送信完了</h1>
                 <p class="main__text">
                     お問い合わせありがとうございました。<br>
                     後日担当者より返信させていただきますので、お待ち下さいませ。

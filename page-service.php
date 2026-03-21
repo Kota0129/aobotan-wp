@@ -67,7 +67,7 @@
             <div class="description__image">
               <img src="<?php echo esc_url( get_theme_file_uri( '/img/paperless_01 1.png' ) ); ?>" alt="事業内容のフロントビジュアル画像">
             </div>
-            <h2 class="main__title">事業内容</h2>
+            <h1 class="main__title">事業内容</h2>
             <p class="main__text">
               青牡丹工務店は、「住宅建築・リフォーム」「方針新築・リフォーム」「公共工事」の3つを事業の柱としています。ここではそれぞれご紹介します。
             </p>

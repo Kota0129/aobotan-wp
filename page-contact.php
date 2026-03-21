@@ -65,7 +65,7 @@
         <section class="description description__c">
           <div class="description__c-inner">
             <div class="description__left">
-                <h2 class="main__title">お問い合わせ</h2>
+                <h1 class="main__title">お問い合わせ</h1>
                 <p class="main__text">
                     青牡丹工務店のサービスにご興味を持って頂き、誠にありがとうございます。下記のフォームよりお問い合わせください。
                 </p>
