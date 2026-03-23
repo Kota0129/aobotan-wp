@@ -115,14 +115,14 @@
           <div class="service__bg bg-gray"></div>
           <div class="service__inner">
               <div class="service__header">
-              <div class="sec__title service__title">
-                <p class="sec__sub-title fw-700">事業内容</p>
-                <h2 class="sec__main-title heading-en">SERVICE</h2>
+                <div class="sec__title service__title">
+                  <p class="sec__sub-title fw-700">事業内容</p>
+                  <h2 class="sec__main-title heading-en">SERVICE</h2>
+                </div>
+                <div class="service__header-image">
+                  <img src="<?php echo esc_url( get_theme_file_uri( '/img/contract_02 1.png' ) ); ?>" alt="青牡丹工勥店の事業内容画像">
+                </div>
               </div>
-              <div class="service__header-image">
-                <img src="<?php echo esc_url( get_theme_file_uri( '/img/contract_02 1.png' ) ); ?>" alt="青牡丹工勥店の事業内容画像">
-              </div>
-            </div>
             <div class="service__body">
               <div class="service__body-item">
                 <div class="service__body-item-image">
