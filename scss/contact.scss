@@ -8,7 +8,7 @@
     max-width: 880px;
     width: 100%;
 
-    @media (max-width: 768px) {
+    @include sp {
       padding: 0 2rem;
     }
   }
@@ -62,7 +62,7 @@
   padding-left: 8.5rem;
   line-height: 1;
 
-  @media (max-width: 768px) {
+  @include sp {
     padding-left: 3rem;
   }
 
@@ -91,7 +91,7 @@
     max-width: 470px;
     width: 100%;
 
-    @media (max-width: 768px) {
+    @include sp {
       max-width: 100%;
       padding: 0 2rem;
     }
@@ -260,7 +260,7 @@
   margin: initial;
   width: 284px;
 
-  @media (max-width: 768px) {
+  @include sp {
     width: 90%;
     margin: 0 auto;
   }

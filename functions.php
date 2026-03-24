@@ -72,7 +72,7 @@ function start_enqueue_scripts() {
   /* ---------- 共通CSS ---------- */
   start_enqueue_theme_style(
     'start-common',
-    '/scss/common.css',
+    '/css/common.css',
     array('ress', 'google-fonts')
   );
 
@@ -80,7 +80,7 @@ function start_enqueue_scripts() {
   if (is_front_page()) {
     start_enqueue_theme_style(
       'start-top',
-      '/scss/top.css',
+      '/css/top.css',
       array('start-common')
     );
   }
@@ -88,7 +88,7 @@ function start_enqueue_scripts() {
   if (is_page('about')) {
     start_enqueue_theme_style(
       'start-about',
-      '/scss/about.css',
+      '/css/about.css',
       array('start-common')
     );
   }
@@ -96,7 +96,7 @@ function start_enqueue_scripts() {
   if (is_page('service')) {
     start_enqueue_theme_style(
       'start-service',
-      '/scss/service.css',
+      '/css/service.css',
       array('start-common')
     );
   }
@@ -104,7 +104,7 @@ function start_enqueue_scripts() {
   if (is_page(array('contact', 'thanks'))) {
     start_enqueue_theme_style(
       'start-contact',
-      '/scss/contact.css',
+      '/css/contact.css',
       array('start-common')
     );
   }

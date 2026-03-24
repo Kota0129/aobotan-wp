@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @use "const" as *;
+@use 'mixin' as *;
 html {
     font-size: 62.5%; /* 16px × 62.5% = 10px */
     scroll-behavior: smooth;
@@ -25,7 +26,7 @@ html {
     margin: 0;
     padding: 0;
 
-    @media (max-width: 768px) {
+    @include sp {
           min-width: initial;
           padding-top: 6.9rem;
       }
@@ -70,7 +71,7 @@ a {
   }
 
   :focus-visible {
-    outline: 2px solid #0f7bff;
+    outline: 2px solid $primaryBlue;
     outline-offset: 2px;
 }
 .heading-en {
@@ -83,7 +84,7 @@ address {
 /* =========================
    アンカーオフセット idの要素の上に余白を追加
 ========================= */
-@media (max-width: 768px) {
+@include sp {
     .scroll-margin-heading {
       scroll-margin-top: 6.9rem;
     }
@@ -110,14 +111,14 @@ address {
   .pc-only {
     display: block;
 
-    @media (max-width: 768px) {
+    @include sp {
         display: none;
     }
 }
 .sp-only {
     display: none;
 
-    @media (max-width: 768px) {
+    @include sp {
         display: block;
     }
   }
@@ -154,7 +155,7 @@ address {
 .ml-minus-18 {
     margin-left: -18%;
 
-    @media (max-width: 768px) {
+    @include sp {
           margin-left: 0;
         }
   }
@@ -162,7 +163,7 @@ address {
   .ml-minus-70 {
     margin-left: 72%;
 
-    @media (max-width: 768px) {
+    @include sp {
           margin-left: 0;
         }
   }
@@ -177,7 +178,7 @@ address {
   .mb-32 {
     margin-bottom: 3.2rem;
 
-    @media (max-width: 768px) {
+    @include sp {
       margin-bottom: 1.6rem;
     }
   }
@@ -185,7 +186,7 @@ address {
   .mb-26{
     margin-bottom: 2.6rem;
 
-    @media (max-width: 768px) {
+    @include sp {
       margin-bottom: 1.6rem;
     }
   }
@@ -197,7 +198,7 @@ address {
   .mb-70 {
     margin-bottom: 7rem;
 
-    @media (max-width: 768px) {
+    @include sp {
       margin-bottom: 4rem;
     }
   }
@@ -271,7 +272,7 @@ address {
     width: 280px;
     flex-shrink: 0;
 
-    @media (max-width: 768px) {
+    @include sp {
           display: none;
         }
     
@@ -383,7 +384,7 @@ address {
   width: 100%;
   display: none;
 
-  @media (max-width: 768px) {
+  @include sp {
       display: block;
       position: fixed;
       top: 0;
@@ -394,7 +395,7 @@ address {
     }
 }
 
-@media (max-width: 768px) {
+@include sp {
   .header__inner {
     width: 100%;
     margin: 0 auto;
@@ -421,7 +422,7 @@ address {
     text-align: center;
     width: 100%;
     height: calc(100vh - 6.9rem);
-    background-color: #fff;
+    background-color: $white;
     padding-top: 3.7rem;
     z-index: 100;
   
@@ -442,7 +443,7 @@ address {
   .header__item {
     margin-bottom: 3.2rem;
 
-    @media (max-width: 768px) {
+    @include sp {
       margin-bottom: 2.2rem;
     }
     &:last-child {
@@ -537,7 +538,7 @@ address {
   flex: 1;
   min-width: 0;
 
-  @media (max-width: 768px) {
+  @include sp {
     width: 100%;
   }
 }
@@ -552,7 +553,7 @@ address {
     font-size: clamp(2rem, 1.7vw, 2.4rem);
     margin-bottom: 1.2rem;
 
-    @media (max-width: 768px) {
+    @include sp {
         margin-bottom: 1rem;
       }
     }
@@ -560,7 +561,7 @@ address {
     .sec__main-title {
       font-size: clamp(7.2rem, 8.9vw, 12.8rem);
       color: transparent;
-      -webkit-text-stroke: 1px #4282B8; 
+      -webkit-text-stroke: 1px $mainBlue; 
       line-height: 1;    
     }
 }
@@ -570,7 +571,7 @@ address {
   margin-bottom: 4rem;
   line-height: 1.8;
 
-  @media (max-width: 768px) {
+  @include sp {
       margin-bottom: 3rem;
     }
 }
@@ -587,7 +588,7 @@ address {
   transition: all 0.3s;
   font-weight: 700;
 
-  @media (max-width: 768px) {
+  @include sp {
       width: 240px;
   }
 
@@ -623,7 +624,7 @@ address {
   padding-right: 4rem;
   margin-bottom: 7.6rem;
 
-  @media (max-width: 768px) {
+  @include sp {
       padding-top: 3.3rem;
       padding-right: 0;
       margin-left: 1rem;
@@ -641,7 +642,7 @@ address {
   background-color: $mainBlue;
   z-index: -1;
 
-  @media (max-width: 768px) {
+  @include sp {
     display: none;
   }
 }
@@ -686,7 +687,7 @@ to {
   right: 11.6rem;
   bottom: 6rem;
   
-  @media (max-width: 768px) {
+  @include sp {
       padding-left: 1rem;
       left: 0;
       bottom: 6rem;
@@ -713,7 +714,7 @@ to {
   bottom: 5.9rem;
   left: 1.8rem;
 
-  @media (max-width: 768px) {
+  @include sp {
       bottom: 3rem;
       left: 0.9rem;
     }
@@ -726,13 +727,13 @@ to {
       display: block;
       width: 1px;
       height: 112px;
-      background-color: #4282B8;
+      background-color: $mainBlue;
       position: absolute;
       right: 50%;
       top: 30px;
       animation: scroll 2s infinite;
 
-      @media (max-width: 768px) {
+      @include sp {
           right: 50%;
           height: 52px;
         }
@@ -768,7 +769,7 @@ to {
   border-radius: 50px 0 0 50px;
   padding: 2.3rem 4rem 5.3rem 2.4rem;
 
-  @media (max-width: 768px) {
+  @include sp {
     border-radius: 0;
     padding: 2rem 2rem 4.1rem;
     margin-bottom: 0;
@@ -782,7 +783,7 @@ to {
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 768px) {
+  @include sp {
     position: relative;
   }
 }
@@ -791,7 +792,7 @@ to {
   width: 68%;
   min-width: 600px;
 
-  @media (max-width: 768px) {
+  @include sp {
     width: 100%;
   }
 }
@@ -801,7 +802,7 @@ to {
   justify-content: left;
   align-items: center;
 
-  @media (max-width: 768px) {
+  @include sp {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -812,7 +813,7 @@ to {
   align-items: center;
   width: fit-content;
 
-  @media (max-width: 768px) {
+  @include sp {
     flex-direction: column;
     align-items: flex-start;
     margin-right: 0;
@@ -827,7 +828,7 @@ to {
   padding: 0.5rem clamp(2rem, 2.3vw, 3.3rem) 0.5rem 0;
   margin-right: clamp(2rem, 2.4vw, 3.4rem);
 
-  @media (max-width: 768px) {
+  @include sp {
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
@@ -843,7 +844,7 @@ to {
     margin-right: 0;
     border-bottom: none;
 
-    @media (max-width: 768px) {
+    @include sp {
         gap: 0;
         padding-bottom: 0;
     }
@@ -859,7 +860,7 @@ to {
     top: 0;
     right: 0;
 
-    @media (max-width: 768px) {
+    @include sp {
       display: none;
     }
   }
@@ -870,7 +871,7 @@ to {
   line-height: 1;
   margin-bottom: 0.6rem;
 
-  @media (max-width: 768px) {
+  @include sp {
     margin-bottom: 0.1rem;
   }
 }
@@ -895,7 +896,7 @@ to {
   font-size: clamp(1rem, 1.12vw, 1.6rem);
   margin-left: clamp(2rem, 4.45vw, 6.4rem);
 
-  @media (max-width: 768px) {
+  @include sp {
     font-size: 1.6rem;
   }
 }
@@ -920,7 +921,7 @@ to {
 .contact__image {
   width: 16%;
 
-  @media (max-width: 768px) {
+  @include sp {
     position: absolute;
     top: -5rem;
     right: 0;
@@ -939,7 +940,7 @@ to {
   .description {
     margin-bottom: 7rem;
 
-    @media (max-width: 768px) {
+    @include sp {
         margin-bottom: 6rem;
       }
   }
@@ -948,7 +949,7 @@ to {
     width: 100%;
     position: relative;
 
-    @media (max-width: 768px) {
+    @include sp {
         padding: 0 2rem;
       }
   }
@@ -959,7 +960,7 @@ to {
     top: 1.5rem;
     right: 0;
 
-    @media (max-width: 768px) {
+    @include sp {
         width: 20%;
       }
 
@@ -974,7 +975,7 @@ to {
     font-size: clamp(2.4rem, 2.8vw, 4rem);
     margin-bottom: 5.5rem;
 
-    @media (max-width: 768px) {
+    @include sp {
         margin-bottom: 3.2rem;
       }
   }
@@ -1037,7 +1038,7 @@ to {
   .footer {
     padding-bottom: 2.5rem;
 
-    @media (max-width: 768px) {
+    @include sp {
         margin: 0 auto;
         padding-bottom: 2.4rem;
       }
@@ -1053,7 +1054,7 @@ to {
     height: 100%;
     background-color: $white;
 
-    @media (max-width: 768px) {
+    @include sp {
         display: none;
       }
   }
@@ -1069,7 +1070,7 @@ to {
     justify-content: space-between;
     align-items: flex-start;
 
-    @media (max-width: 768px) {
+    @include sp {
         flex-direction: column;
         align-items: center;
       }
@@ -1078,7 +1079,7 @@ to {
   .footer__heading {
     width: fit-content;
 
-    @media (max-width: 768px) {
+    @include sp {
         margin-bottom: 6rem;
       }
   }
@@ -1087,7 +1088,7 @@ to {
     width: 222px;
     margin-bottom: 3rem;
 
-    @media (max-width: 768px) {
+    @include sp {
         margin: 2.2rem auto 3.1rem;
       }
 
@@ -1101,7 +1102,7 @@ to {
   .footer__address {
     width: fit-content;
 
-    @media (max-width: 768px) {
+    @include sp {
         width: 100%;
         text-align: center;
       }
@@ -1117,7 +1118,7 @@ to {
     font-size: clamp(1.2rem, 1.12vw, 1.6rem);
     margin-bottom: 0.7rem;
 
-    @media (max-width: 768px) {
+    @include sp {
         margin-bottom: 1.3rem;
     }
 
@@ -1131,7 +1132,7 @@ to {
     font-weight: 700;
     padding-top: 1.8rem;
     
-    @media (max-width: 768px) {
+    @include sp {
         padding-top: 0;
         margin-bottom: 5rem;
     }
@@ -1141,7 +1142,7 @@ to {
     display: flex;
     margin-bottom: 3rem;
 
-    @media (max-width: 768px) {
+    @include sp {
         flex-direction: column;
         align-items: center;
         margin-bottom: 0;
@@ -1156,7 +1157,7 @@ to {
     width: fit-content;
     margin-right: 2.4rem;
 
-    @media (max-width: 768px) {
+    @include sp {
         margin-right: 0;
         margin-bottom: 2.2rem;
 
@@ -1173,7 +1174,7 @@ to {
   .footer__link {
     font-size: clamp(1rem, 1.12vw, 1.6rem);
 
-    @media (max-width: 768px) {
+    @include sp {
         font-size: 1.6rem;
       }
   }
@@ -1181,7 +1182,7 @@ to {
   .footer__mail-item {
     margin-left: 2.8rem;
 
-    @media (max-width: 768px) {
+    @include sp {
         margin-left: 0;
       }
   }
@@ -1210,7 +1211,7 @@ to {
     text-align: right;
     margin-right: 5.6rem;
 
-    @media (max-width: 768px) {
+    @include sp {
         text-align: center;
         margin-right: 0;
       }

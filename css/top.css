@@ -267,10 +267,10 @@
 }
 
 .news__item {
-  border-top: 1px solid $subBlue;
+  border-top: 1px solid #B1C6DC;
 }
 .news__item:last-child {
-  border-bottom: 1px solid $subBlue;
+  border-bottom: 1px solid #B1C6DC;
 }
 
 .news__link {
@@ -309,7 +309,7 @@
 }
 .news__header .news__badge {
   font-size: 1.4rem;
-  border: 1px solid $mainBlue;
+  border: 1px solid #4282B8;
   display: inline-block;
   width: 115px;
   text-align: center;
@@ -355,7 +355,7 @@
 
 /* 背景の黒いオーバーレイ */
 .modal__overlay {
-  background-color: $black;
+  background-color: #000;
   opacity: 0.3;
   position: absolute;
   inset: 0;
@@ -363,7 +363,7 @@
 
 /* モーダル本体 */
 .modal__content {
-  background-color: $white;
+  background-color: #fff;
   width: 860px;
   position: absolute;
   top: 50%;
@@ -408,20 +408,20 @@
   /* ===== レール（背景） ===== */
 }
 .modal__scroll::-webkit-scrollbar-track {
-  background: $lightBlue;
+  background: #DAEFEF;
 }
 .modal__scroll {
   /* ===== つまみ ===== */
 }
 .modal__scroll::-webkit-scrollbar-thumb {
-  background-color: $mediumGray;
+  background-color: #9ca3af;
   border-radius: 999px;
 }
 .modal__scroll {
   /* ===== hover時 ===== */
 }
 .modal__scroll::-webkit-scrollbar-thumb:hover {
-  background-color: $darkGray;
+  background-color: #6b7280;
 }
 .modal__scroll .modal__header {
   margin-bottom: 1.6rem;

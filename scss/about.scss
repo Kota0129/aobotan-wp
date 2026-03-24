@@ -1,7 +1,7 @@
 .fv-about {
     margin-bottom: 5rem;
 
-    @media (max-width: 768px) {
+    @include sp {
         margin-bottom: 7.3rem;
     }
 }
@@ -13,14 +13,14 @@
     max-width: 953px;
     width: 100%;
 
-    @media (max-width: 768px) {
+    @include sp {
         padding: 0 2rem;
     }
 
     .sub__title {
         margin-bottom: 5.5rem;
 
-        @media (max-width: 768px) {
+        @include sp {
             margin-bottom: 3.5rem;
         }
     }
@@ -33,7 +33,7 @@
 .philosophy__image {
     width: 96.9%;
 
-    @media (max-width: 768px) {
+    @include sp {
         width: 100%;
     }
 
@@ -51,14 +51,14 @@
     max-width: 953px;
     width: 100%;
 
-    @media (max-width: 768px) {
+    @include sp {
         padding: 0 2rem;
     }
 
     .sub__title {
         margin-bottom: 5.5rem;
 
-        @media (max-width: 768px) {
+        @include sp {
             margin-bottom: 3.5rem;
         }
     }
@@ -70,7 +70,7 @@
     align-items: flex-start;
     margin-bottom: 5rem;
 
-    @media (max-width: 768px) {
+    @include sp {
         flex-direction: column;
         align-items: center;
         margin-bottom: 3.6rem;
@@ -80,7 +80,7 @@
 .company__item {
     width: 48.8%;
 
-    @media (max-width: 768px) {
+    @include sp {
         width: 100%;
     }
 }
@@ -88,7 +88,7 @@
 .company__text {
     line-height: 1.8;
 
-    @media (max-width: 768px) {
+    @include sp {
         margin-bottom: 2rem;
     }
 }
@@ -96,7 +96,7 @@
 .company__item-ceo {
     width: 34.7%;
 
-    @media (max-width: 768px) {
+    @include sp {
         width: 100%;
     }
 }
@@ -124,7 +124,7 @@
 .company__desc {
     margin-bottom: 4.4rem;
 
-    @media (max-width: 768px) {
+    @include sp {
         margin-bottom: 3.2rem;
     }
 }
@@ -132,7 +132,7 @@
 .company__desc-item {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #B1C6DC;
+    border-bottom: 1px solid $subBlue;
     padding: 3rem 0;
     line-height: 1;
 }
@@ -151,7 +151,7 @@
 .safety {
     margin-bottom: 19.3rem;
 
-    @media (max-width: 768px) {
+    @include sp {
         margin-bottom: 10rem;
     }
 
@@ -159,14 +159,14 @@
         max-width: 953px;
         width: 100%;
 
-        @media (max-width: 768px) {
+        @include sp {
             padding: 0 2rem;
         }
 
         .sub__title {
             margin-bottom: 7.6rem;
 
-            @media (max-width: 768px) {
+            @include sp {
                 margin-bottom: 3.5rem;
             }
         }
@@ -195,7 +195,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: 768px) {
+    @include sp {
         flex-direction: column;
         align-items: center;
     }
@@ -205,7 +205,7 @@
     width: 67.3%;
     line-height: 1.8;
 
-    @media (max-width: 768px) {
+    @include sp {
         width: 100%;
         margin-bottom: 2rem;
     }
@@ -214,7 +214,7 @@
 .safety__image {
     width: 28%;
 
-    @media (max-width: 768px) {
+    @include sp {
         width: 100%;
     }
 
